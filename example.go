@@ -1,12 +1,14 @@
 package main
 
-import "github.com/evandrojr/string-interpolation/esi"
+import (
+	"fmt"
+
+	"github.com/evandrojr/string-interpolation/esi"
+)
 
 func main() {
-	esi.Println("First ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
-	esi.Println("First ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
-
-	f := esi.Sprint("Second ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
-
-	println(f)
+	esi.Print("Print ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
+	esi.Println("Println ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
+	f := esi.Sprint("Sprint ", 10, " ", 7, " interpolates anything ", true, " ", 3.4e10)
+	fmt.Print(f)
 }
