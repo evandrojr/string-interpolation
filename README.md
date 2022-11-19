@@ -34,7 +34,7 @@ func main() {
 ### Output
 
 ```
-Print 10 7 interpolates anything true 3.4e+10 no line bread
+Print 10 7 interpolates anything true 3.4e+10 no line break
 Println 10 7 interpolates anything true 3.4e+10
 Sprint 10 7 interpolates anything true 3.4e+10% 
 ```
