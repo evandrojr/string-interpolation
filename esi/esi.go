@@ -2,6 +2,7 @@ package esi
 
 import (
 	"fmt"
+	"strings"
 )
 
 func Print(vs ...any) {
@@ -18,9 +19,11 @@ func Println(vs ...any) {
 }
 
 func Sprint(vs ...any) string {
-	s := ""
+
+	var sb strings.Builder
+
 	for _, v := range vs {
-		s += fmt.Sprintf("%v", v)
+		sb.WriteString(fmt.Sprintf("%v", v))
 	}
-	return s
+	return sb.String()
 }
