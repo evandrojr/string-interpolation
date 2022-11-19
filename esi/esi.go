@@ -14,7 +14,7 @@ func Println(vs ...any) {
 	for _, v := range vs {
 		fmt.Printf("%v", v)
 	}
-	fmt.Println("")
+	fmt.Println()
 }
 
 func Sprint(vs ...any) string {
